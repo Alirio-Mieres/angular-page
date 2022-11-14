@@ -39,9 +39,9 @@ export class ProductosService {
   buscarProducto( termino: string ) {
 
     if( this.productos.length === 0 ) {
-      //cargar productos
+
       this.cargarProductos().then( () => {
-        //ejecutar despues de tener los productos
+
         this.filtrarProductos( termino );
       })
     } else {
